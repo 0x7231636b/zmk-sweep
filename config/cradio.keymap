@@ -21,6 +21,12 @@
 #define LEF 3
 #define TRI 4
 
+// Home row mods macro
+#define HRML(k2,k3,k4) &ht LCTRL k2  &ht LALT k3  &ht LGUI k4
+#define HRMR(k1,k2,k3) &ht RGUI k1  &ht RALT k2 &ht RCTRL k3
+#define LHRML(k2,k3,k4) &ht LCTRL k2  &ht LALT k3  &ht LGUI k4
+#define LHRMR(k1,k2,k3) &ht RGUI k1  &ht RALT k2  &ht RCTRL k3
+
 / {
     macros {
         auml: auml {
