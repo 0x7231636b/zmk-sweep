@@ -150,8 +150,8 @@
         //│ DELETE   │ CapsLock │ PrintSc  │  INSERT  │          |   |          │ LEFT     │ UP       │ DOWN     │ RIGHT    │
             &kp DEL   &kp CAPS   &kp PSCRN  &kp INS     &trans         &trans     &kp LARW   &kp UARW   &kp DARW   &kp RARW 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
-            &trans    &trans     &trans     &trans      &trans         &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END 
+        //│          │          │          │          │          │   │          │ HOME     │ PAGE UP  │ PAGE DN  │ END      │
+            &trans    &trans     &trans     &trans      &trans         &trans     &kp HOME   &kp PG_UP  &kp PG_DN  &kp END 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
