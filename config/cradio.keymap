@@ -10,7 +10,7 @@
 #include "../zmk-nodefree-config/international_chars/german.dtsi"
 
 #define MAC 0
-#define WIN 1
+#define LIN 1
 #define RIG 2
 #define LEF 3
 #define TRI 4
@@ -120,10 +120,12 @@
             >;
         };
 
-        // TODO: This layer can be removed since the home row mods are now equal 
-        // and will be managed by keysharp (if early access is sufficient) or simliar 
-        // to imitate macOS keybind behaviour:
+        // There may be some workaround in the future by pimping the OS with a hotkey replacement feature.
+        // E.g. keysharp (if early access is sufficient) or simliar (autohotkey 2) 
+        // This can imitate macOS keybind behaviour:
         // https://www.autohotkey.com/boards/viewtopic.php?f=81&t=125220
+        // We must ensure that the software can be installed on the system. The linux layer is always a good fallback
+        // to have when this is not possible due to company restrictions or similar.
         linux_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
@@ -182,10 +184,10 @@
             &kp F1     &kp F2     &kp F3     &kp F4     &bt BT_SEL 0     &bt BT_SEL 2  &out OUT_TOG  &kp C_MUTE  &kp C_NEXT  &bootloader
         //├──────────┼──────────┼──────────┼───────────┼────────────┤   ├────────────┼────────────┼────────────┼──────────┼──────────┤
         //│  F5      │  F6      │  F7      │  F8       │ PROFILE 1  │   │ PROFILE 3  │ INC BRIGHT │   VOL UP   │PAUSEMUSIC│            
-            &kp F5     &kp F6     &kp F7     &kp F8     &bt BT_SEL 1     &bt BT_SEL 3  &kp C_BRI_UP &kp C_VOL_UP  &kp C_PP     &trans  
+            &kp F5     &kp F6     &kp F7     &kp F8     &bt BT_SEL 1     &bt BT_SEL 3  &kp C_BRI_UP &kp C_VOL_UP  &kp C_PP  &trans  
         //├──────────┼──────────┼──────────┼───────────┼────────────┤   ├────────────┼────────────┼────────────┼──────────┼──────────┤
-        //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │   VOL DOWN │ PREVSONG │            
-            &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR      &bt BT_SEL 4 &kp C_BRI_DEC &kp C_VOL_DN &kp C_PREV     &trans 
+        //│  F9      │  F10     │  F11     │  F12      │  CLEAR BT  │   │ PROFILE 4  │ DEC BRIGHT │   VOL DOWN │ PREVSONG │ Linux Layer
+            &kp F9     &kp F10    &kp F11    &kp F12     &bt BT_CLR      &bt BT_SEL 4 &kp C_BRI_DEC &kp C_VOL_DN &kp C_PREV  &tog LIN 
         //╰──────────┴──────────┴──────────┼───────────┼────────────┤   ├────────────┼────────────┼────────────┴──────────┴──────────╯
                                                 &trans     &trans         &trans     &trans
         //                                  ╰───────────┴──────────╯   ╰──────────┴────────────╯
