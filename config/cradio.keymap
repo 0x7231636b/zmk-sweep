@@ -95,10 +95,10 @@
                ╰────────────╯  ╰────────────╯
     */
 
-    COMBO(auml, &auml, 8 9, 0)
-    COMBO(ouml, &ouml, 18 19, 0)
-    COMBO(uuml, &uuml, 28 29, 0)
-    COMBO(szuml, &eszett, 7 8, 0)
+    COMBO(auml, &auml, 7 8, 0)
+    COMBO(ouml, &ouml, 17 18, 0)
+    COMBO(uuml, &uuml, 27 28, 0)
+    COMBO(szuml, &eszett, 8 9, 0)
   };
 
     keymap {
