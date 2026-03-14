@@ -1,0 +1,134 @@
+/ {
+    macros {
+
+        /* macOS lowercase */
+
+        mac_ae: mac_ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LA(U)>
+                , <&macro_tap &kp A>;
+        };
+
+        mac_oe: mac_oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LA(U)>
+                , <&macro_tap &kp O>;
+        };
+
+        mac_ue: mac_ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LA(U)>
+                , <&macro_tap &kp U>;
+        };
+
+        mac_sz: mac_sz {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LA(S)>;
+        };
+
+
+        /* macOS uppercase */
+
+        mac_AE: mac_AE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LA(U)>
+                , <&macro_tap &kp LS(A)>;
+        };
+
+        mac_OE: mac_OE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LA(U)>
+                , <&macro_tap &kp LS(O)>;
+        };
+
+        mac_UE: mac_UE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp LA(U)>
+                , <&macro_tap &kp LS(U)>;
+        };
+
+
+        /* Linux lowercase */
+
+        lin_ae: lin_ae {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp RALT>
+                , <&macro_tap &kp LS(SQT)>
+                , <&macro_tap &kp A>;
+        };
+
+        lin_oe: lin_oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp RALT>
+                , <&macro_tap &kp LS(SQT)>
+                , <&macro_tap &kp O>;
+        };
+
+        lin_ue: lin_ue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp RALT>
+                , <&macro_tap &kp LS(SQT)>
+                , <&macro_tap &kp U>;
+        };
+
+
+        /* Linux uppercase */
+
+        lin_AE: lin_AE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp RALT>
+                , <&macro_tap &kp LS(SQT)>
+                , <&macro_tap &kp LS(A)>;
+        };
+
+        lin_OE: lin_OE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp RALT>
+                , <&macro_tap &kp LS(SQT)>
+                , <&macro_tap &kp LS(O)>;
+        };
+
+        lin_UE: lin_UE {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp RALT>
+                , <&macro_tap &kp LS(SQT)>
+                , <&macro_tap &kp LS(U)>;
+        };
+
+        lin_sz: lin_sz {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap &kp RALT>
+                , <&macro_tap &kp S>
+                , <&macro_tap &kp S>;
+        };
+
+    };
+};
