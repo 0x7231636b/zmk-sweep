@@ -4,42 +4,42 @@
         mac_ae: mac_ae {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mac_ae_macro>, <&mac_AE_macro>;
+            bindings = <&mac_ae_macro>, <&mac_ae_shift_macro>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         mac_oe: mac_oe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mac_oe_macro>, <&mac_OE_macro>;
+            bindings = <&mac_oe_macro>, <&mac_oe_shift_macro>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         mac_ue: mac_ue {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mac_ue_macro>, <&mac_UE_macro>;
+            bindings = <&mac_ue_macro>, <&mac_ue_shift_macro>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         lin_ae: lin_ae {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lin_ae_macro>, <&lin_AE_macro>;
+            bindings = <&lin_ae_macro>, <&lin_ae_shift_macro>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         lin_oe: lin_oe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lin_oe_macro>, <&lin_OE_macro>;
+            bindings = <&lin_oe_macro>, <&lin_oe_shift_macro>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         lin_ue: lin_ue {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lin_ue_macro>, <&lin_UE_macro>;
+            bindings = <&lin_ue_macro>, <&lin_ue_shift_macro>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
