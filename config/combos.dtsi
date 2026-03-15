@@ -1,3 +1,9 @@
+#define MAC 0
+#define LIN 1
+#define RIG 2
+#define LEF 3
+#define TRI 4
+
 / {
     combos {
         compatible = "zmk,combos";
